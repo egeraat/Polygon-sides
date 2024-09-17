@@ -60,13 +60,13 @@ namespace PolygonSides
                             PrintPolygonSides(91, 100);
                             break;
                         default:
-                            Console.WriteLine("Invalid choice");
+                            Console.WriteLine("Invalid choice");  //kan alleen 0 tot en ment 10 zijn
                             break;
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input");
+                    Console.WriteLine("Invalid input"); //kan niks anders dan een getal zijn
                 }
             }
         }
@@ -101,11 +101,11 @@ namespace PolygonSides
                 "Enneacontaenneagon (99 sides)", "Hectogon (100 sides)"
             };
 
-            if (end > polygonNames.Length) end = polygonNames.Length;
+            if (end > polygonNames.Length) end = polygonNames.Length; 
 
-            for (int i = start - 1; i < end; i++)
+            for (int i = start - 1; i < end; i++) 
             {
-                Console.WriteLine(polygonNames[i]);
+                Console.WriteLine(polygonNames[i]); //print de items die we willen zien
             }
         }
     }
